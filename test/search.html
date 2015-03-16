@@ -1,0 +1,567 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<SCRIPT>
+<!--
+var BundeslandArray=new Array(16);
+var BundeslandArrayId=new Array(16);
+
+BundeslandArray['0']=new Array('-- Alle Registergerichte --');
+BundeslandArray['bw']=new Array('Aalen','Achern','Adelsheim','Albstadt','Backnang','Bad Mergentheim','Bad Säckingen','Bad Saulgau','Bad Urach','Bad Waldsee','Baden-Baden','Balingen','Besigheim','Biberach','Böblingen','Brackenheim','Breisach am Rhein','Bretten','Bruchsal','Buchen','Bühl','Calw','Crailsheim','Donaueschingen','Ehingen','Ellwangen (Jagst)','Emmendingen','Esslingen am Neckar','Ettenheim','Ettlingen','Freiburg','Freudenstadt','Geislingen / Steige','Gengenbach','Gernsbach','Göppingen','Hechingen','Heidelberg','Heidenheim','Heilbronn','Horb','Karlsruhe','Karlsruhe-Durlach','Kehl','Kenzingen','Kirchheim unter Teck','Konstanz','Künzelsau','Lahr','Langenburg','Leonberg','Leutkirch','Lörrach','Ludwigsburg','Mannheim','Marbach','Maulbronn','Mosbach','Müllheim','Münsingen','Nagold','Neresheim','Nürtingen','Oberkirch','Oberndorf','Offenburg','Öhringen','Pforzheim','Philippsburg','Radolfzell','Rastatt','Ravensburg','Reutlingen','Riedlingen','Rottenburg am Neckar','Rottweil','Sankt Blasien','Schönau im Schwarzwald','Schopfheim','Schorndorf','Schwäbisch Gmünd','Schwäbisch Hall','Schwetzingen','Sigmaringen','Singen (Hohentwiel)','Sinsheim','Spaichingen','Staufen i. Br.','Stockach','Stuttgart','Tauberbischofsheim','Tettnang','Titisee-Neustadt','Tübingen','Tuttlingen','Überlingen','Ulm','Vaihingen / Enz','Villingen-Schwenningen','Waiblingen','Waldkirch','Waldshut-Tiengen','Wangen / Allgäu','Weinheim','Wertheim','Wiesloch','Wolfach');
+
+BundeslandArrayId['bw']=new Array('B2101','B1101','B1701','B2202','B2601','B2102','B1902','B2406','B2708','B2401','B1102','B2201','B2301','B2402','B2602','B2302','B1201','B1401','B1402','B1703','B1103','B2701','B2103','B1501','B2801','B2104','B1202','B2603','B1203','B1403','B8536','B2501','B2802','B1801','B1104','B2803','B2204','B1302','B2105','B2303','B2502','B1404','B1405','B1802','B1205','B2604','B1503','B2304','B1803','B2106','B2605','B2403','B1206','B2606','B8535','B2305','B2306','B1705','B1207','B2702','B2703','B2107','B2607','B1804','B2503','B1805','B2307','B1406','B1407','B1506','B1105','B2404','B2705','B2405','B2706','B2504','B1903','B1904','B1905','B2608','B2108','B2308','B1602','B2205','B1507','B1304','B2505','B1209','B1508','B8534','B1706','B2407','B1208','B2707','B2506','B1510','B8537','B2309','B1511','B2611','B1210','B1906','B2408','B1603','B1707','B1305','B1806');
+
+BundeslandArray['by']=new Array('Amberg','Ansbach','Aschaffenburg','Augsburg','Bamberg','Bayreuth','Coburg','Deggendorf','Fürth','Hof','Ingolstadt','Kempten ','Landshut','Memmingen','München','Nürnberg','Passau','Regensburg','Schweinfurt','Straubing','Traunstein','Weiden i. d. OPf (Weiden)','Würzburg');
+
+BundeslandArrayId['by']=new Array('D3101','D3201','D4102','D2102','D4201','D4301','D4401','D2201','D3304','D4501','D5701','D2304','D2404','D2505','D2601','D3310','D2803','D3410','D4608','D3413','D2910','D3508','D4708');
+
+BundeslandArray['be']=new Array('Charlottenburg (Berlin)');
+
+BundeslandArrayId['be']=new Array('F1103');
+
+BundeslandArray['br']=new Array('Cottbus','Frankfurt/Oder','Neuruppin','Potsdam');
+
+BundeslandArrayId['br']=new Array('G1103','G1207','G1309','G1312');
+
+BundeslandArray['hb']=new Array('Bremen','Bremerhaven');
+
+BundeslandArrayId['hb']=new Array('H1101','H1102');
+
+BundeslandArray['hh']=new Array('Hamburg');
+
+BundeslandArrayId['hh']=new Array('K1101R');
+
+BundeslandArray['he']=new Array('Bad Hersfeld','Bad Homburg','Darmstadt','Eschwege','Frankfurt am Main','Friedberg','Fritzlar','Fulda','Gießen','Hanau','Kassel','Königstein','Korbach','Limburg a. d. Lahn','Marburg','Offenbach am Main','Wetzlar','Wiesbaden');
+
+BundeslandArrayId['he']=new Array('M1305','M1202','M1103','M1602','M1201','M1405','M1603','M1301','M1406','M1502','M1607','M1203','M1608','M1706','M1809','M1114','M1710','M1906');
+
+BundeslandArray['mv']=new Array('Anklam','Bad Doberan','Bergen auf Rügen','Demmin','Greifswald','Grevesmühlen','Güstrow','Hagenow','Ludwigslust','Neubrandenburg','Neustrelitz','Parchim','Pasewalk','Ribnitz-Damgarten','Rostock','Schwerin','Stralsund','Ueckermünde','Waren (Müritz)','Wismar','Wolgast');
+
+BundeslandArrayId['mv']=new Array('N1102','N1201','N1208','N1103','N1202','N1203','N1303','N1304','N1305','N1105','N1106','N1307','N1107','N1205','N1206','N1308','N1209','N1111','N1112','N1210','N1211');
+
+BundeslandArray['ni']=new Array('Aurich','Braunschweig','Göttingen','Hannover','Hildesheim','Lüneburg','Oldenburg','Osnabrück','Stadthagen','Tostedt','Walsrode');
+
+BundeslandArrayId['ni']=new Array('P3101','P1103','P2204','P2305','P2408','P2507','P3210','P3313','P2106','P2613','P2716');
+
+BundeslandArray['nw']=new Array('Aachen','Arnsberg','Bad Oeynhausen','Bielefeld','Bochum','Bonn','Coesfeld','Delbrück','Dortmund','Duisburg','Düren','Düsseldorf','Essen','Gelsenkirchen','Gütersloh','Hagen','Hamm','Hattingen','Iserlohn','Kleve','Köln','Krefeld','Lemgo','Marl','Moenchengladbach','Münster','Nettetal','Neuss','Paderborn','Recklinghausen','Rheine','Siegburg','Siegen','Steinfurt','Wuppertal');
+
+BundeslandArrayId['nw']=new Array('R3101','R1901','R2108','R2101','R2201','R3201','R2707','R2804','R2402','R1202','R3103','R1101','R2503','R2507','R2103','R2602','R2404','R2510','R2604','R1304','R3306','R1402','R2307','R2511','R1504','R2713','R1404','R1102','R2809','R2204','R2715','R3208','R2909','R2706','R1608');
+
+BundeslandArray['rp']=new Array('Bad Kreuznach','Kaiserslautern','Koblenz','Landau','Ludwigshafen a.Rhein (Ludwigshafen)','Mainz','Montabaur','Wittlich','Zweibrücken');
+
+BundeslandArrayId['rp']=new Array('T2101','T3201','T2210','T3304','T3104','T2304','T2214','T2408','T3403');
+
+BundeslandArray['sl']=new Array('Homburg','Lebach','Merzig','Neunkirchen','Ottweiler','Saarbrücken','Saarlouis','St. Ingbert','St. Wendel','Völklingen');
+
+BundeslandArrayId['sl']=new Array('V1102','V1103','V1104','V1105','V1107','V1109','V1110','V1111','V1112','V1115');
+
+BundeslandArray['sn']=new Array('Annaberg','Aue','Auerbach','Bautzen','Borna','Chemnitz','Dippoldiswalde','Döbeln','Dresden','Eilenburg','Freiberg','Görlitz','Grimma','Hainichen','Hohenstein-Ernstthal','Hoyerswerda','Kamenz','Leipzig','Löbau','Marienberg','Meißen','Oschatz','Pirna','Plauen','Riesa','Stollberg','Torgau','Weißwasser','Zittau','Zwickau');
+
+BundeslandArrayId['sn']=new Array('U1201','U1202','U1203','U1101','U1302','U1206','U1103','U1304','U1104','U1305','U1208','U1107','U1306','U1210','U1211','U1109','U1110','U1308','U1111','U1213','U1112','U1309','U1114','U1215','U1115','U1219','U1310','U1117','U1118','U1222');
+
+BundeslandArray['st']=new Array('Stendal');
+
+BundeslandArrayId['st']=new Array('W1215');
+
+BundeslandArray['sh']=new Array('Flensburg','Kiel','Lübeck','Pinneberg');
+
+BundeslandArrayId['sh']=new Array('X1112','X1517','X1721','X1321');
+
+BundeslandArray['th']=new Array('Altenburg ','Apolda ','Arnstadt ','Arnstadt Zweigstelle Ilmenau ','Bad Salzungen ','Eisenach ','Erfurt ','Gera ','Gotha ','Greiz ','Heilbad Heiligenstadt ','Hildburghausen ','Jena','Meiningen ','Mühlhausen ','Mühlhausen Zweigstelle Bad Langensalza ','Nordhausen ','Pößneck ','Pößneck Zweigstelle Bad Lobenstein ','Rudolstadt ','Rudolstadt Zweigstelle Saalfeld ','Sömmerda ','Sondershausen ','Sonneberg ','Stadtroda ','Suhl ','Weimar ');
+
+BundeslandArrayId['th']=new Array('Y1201','Y1101','Y1102','Y1303','Y1301','Y1105','Y1106','Y1203','Y1108','Y1205','Y1109','Y1302','Y1206','Y1304','Y1110','Y1104','Y1111','Y1209','Y1208','Y1210','Y1211','Y1112','Y1113','Y1307','Y1214','Y1308','Y1114');
+
+
+function updateGericht(l)
+{
+//alert(l);
+//Gerichte loeschen
+document.suche.gericht.length=1;
+  var arrV=BundeslandArray[l];
+  var arrId=BundeslandArrayId[l];
+        for (var i=0;i<arrV.length;i++) {
+    document.suche.gericht.options[document.suche.gericht.options.length] = new Option(arrV[i],arrId[i],false,true);
+
+ }
+document.suche.gericht.options[0].selected= true;
+
+}
+
+function validate_form()
+{
+
+//Detail-Suche
+      if(document.suche.suchart[0].checked )
+      {
+
+                    if (document.suche.gericht.value=="" )
+                    {
+                          alert("Registergericht auswaehlen")
+                          return (false);
+                    }
+                    else
+                    {
+                          if (!(document.suche.fname.value || document.suche.fsitz.value || document.suche.az.value ))
+                          {
+                            alert("Firmenname oder Firmensitz oder Aktenzeichen eingeben");
+                            return (false);
+                          }
+                    }
+/*
+
+                    if (theForm.vj.value=="" || theForm.bj.value=="" )
+                    {
+                          alert("Datum auswdhlen")
+                          return (false);
+                    }
+
+*/
+
+      }
+
+var checkOK = "@ÜÖÄABCDEFGHIJKLMNOPQRSTUVXYZ[\]^_`üöäabcdefghijklmnopqrstuvxyz{|}0123456789-*\"!?@.,.:0&+#<>/()[]=`h{t \t\r\n\f";
+var strOK="Geben Sie nur Buchstaben, Ziffern, Leeraeume und *\"!?@.,.:'0&+#<>/()[]=`h{t";
+
+if(document.suche.fname.value.length>0)
+{
+      var allValid = true;
+      for (i = 0;  i < document.suche.fname.value.length;  i++)
+      {
+        ch = document.suche.fname.value.charAt(i);
+        for (j = 0;  j < checkOK.length;  j++) if (ch == checkOK.charAt(j)) break;
+        if (j == checkOK.length && i == asciiOK.length)
+        {
+          allValid = false;
+          break;
+        }
+      }
+      if (!allValid)
+      {
+        alert(strOK+"-Zeichen in das Feld Name ein.");
+        document.suche.fname.focus();
+        return (false);
+      }
+      if(document.suche.fname.value.length<2)
+      {
+        alert("mindestens 2 Zeichen eingeben!")
+        document.suche.fname.focus();
+        return (false);
+      }
+}
+if(document.suche.fsitz.value.length>0)
+{
+      var allValid = true;
+      for (i = 0;  i < document.suche.fsitz.value.length;  i++)
+      {
+        ch =  document.suche.fsitz.value.charAt(i);
+        for (j = 0;  j < checkOK.length;  j++) if (ch == checkOK.charAt(j)) break;
+        if (j == checkOK.length && i == asciiOK.length)
+        {
+          allValid = false;
+          break;
+        }
+
+      }
+      if (!allValid)
+      {
+        alert(strOK+"-Zeichen in das Feld Sitz ein.");
+        document.suche.fsitz.focus();
+        return (false);
+      }
+      if(document.suche.fsitz.value.length<2)
+      {
+        alert("mindestens 2 Zeichen eingeben!")
+        document.suche.fsitz.focus();
+        return (false);
+      }
+}
+
+if(document.suche.bt.value!="" || document.suche.bm.value!="" || document.suche.bj.value!="")
+if(!(document.suche.bt.value!="" && document.suche.bm.value!="" && document.suche.bj.value!=""))
+{
+        alert("Bitte das Datum komplett Eintragen");
+        return (false);
+}
+
+
+if(document.suche.vt.value!="" || document.suche.vm.value!="" || document.suche.vj.value!="")
+if(!(document.suche.vt.value!="" && document.suche.vm.value!="" && document.suche.vj.value!=""))
+{
+  alert("Bitte das Datum komplett Eintragen");
+  return (false);
+}else if(document.suche.bt.value=="" && document.suche.bm.value=="" && document.suche.bj.value=="")
+{
+document.suche.bt.value=document.suche.vt.value;
+document.suche.bm.value=document.suche.vm.value;
+document.suche.bj.value=document.suche.vj.value;
+}
+
+if (document.suche.gericht.value!="")document.suche.gericht_name.value=document.suche.gericht.options[document.suche.gericht.selectedIndex].text;
+
+      return (true);
+    }
+-->
+</SCRIPT>
+
+<script type=text/javascript>
+<!--
+function NeuFenster(Adresse) {
+//alert("ok"+Adresse);
+ MeinFenster = window.open("skripte/hrb.php?"+Adresse,"Zweitfenster","location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no");
+
+}
+
+function blaettern(seite,l,r)
+{
+if(seite=='all'){
+//        document.suche.all.value=true;
+
+        document.suche.anzv.value='alle';
+        document.suche.submit();
+        exit;
+}
+if(l==-1 && r==-1){
+        x=seite.split("-");
+        seite=x[0];
+        l=x[1];
+        r=x[2];
+}
+//alert(seite+'-'+l+'-'+r);
+document.suche.seite.value=seite;
+document.suche.l.value=l;
+document.suche.r.value=r;
+document.suche.submit();
+
+}
+//-->
+</SCRIPT>
+<head>
+ <title>Justizportal - Verfahren</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<!--META http-equiv="content-type" content="text/html; charset=UTF-8"-->
+
+        <meta content="Justizportal des Bundes und der L&auml;nder" name="DC.Description" />
+        <meta content="Referat Ãƒfentlichkeitsarbeit" name="DC.Author" />
+        <meta content="" name="DC.Publisher" />
+        <meta content="" name="DC.Copyright" />
+        <meta content="" name="DC.Keywords" />
+        <meta content="Justizportal des Bundes und der L&auml;nder" name="DC.Page-topic" />
+        <meta content="BehÃ¶rde" name="DC.Page-type" />
+        <meta content="General" name="DC.Audience" />
+        <meta content="BehÃ¶rde" name="DC.Page-type" />
+        <meta content="index,follow" name="Robots" />
+
+        <link href="mailto:redaktion@justiz.de" title="Mail" rel="author" />
+        <link href="http://www.justiz.de/Uebersicht.php" title="Inhaltsverzeichnis" rel="contents" />
+        <link href="http://www.justiz.de/index.php" title="Startseite" rel="start" />
+        <link href="http://www.justiz.de/Impressum.php" title="Impressum" rel="copyright" />
+        <link href="http://www.justiz.de/index.php#suchzeile" title="Suchen" rel="search" />
+        <link href="images/basis.css" title="Basis-Stylesheet" type="text/css" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!--link media="screen, projection" href="index.php-Dateien/basic-edit9d_portal.css" type="text/css" rel="stylesheet--">
+  <!--link media="screen, projection, braille" href="index.php-Dateien/firefox_portal.css" type="text/css" rel="stylesheet"-->
+
+
+</head>
+<body>
+  <a name="top"></a>
+    <div id="kopf">
+    <a title="Link zur Startseite" href="http://www.justiz.de/">
+      <img alt="Justitia auf Deutschlandkarte" src="images/justitia.gif" id="logo" height="132" width="160">
+    </a>
+    <h1>Registerbekanntmachungen</h1>
+  </div>
+  <div id="micronavi">
+    <ul>
+      <?echo $micronavi;?>
+    </ul>
+    </div>
+  <div id="mitte">
+      <div id="spalteLinks">
+          <div class="colitem">
+            <div id="navi">
+              <h2 class="hidden">Navigation</h2>
+                <ul>
+
+                                <li><a href='?aktion=suche'class=selected >Bekanntmachungen<br>suchen</a></li>
+                                    <li><a href='?aktion=hilfe' >Hilfe zur Suche</a></li>
+                                    <li><a href='?aktion=fragen' >H&auml;ufige Fragen</a></li>
+                                   <li><a href='?aktion=laender' >L&auml;nder&uuml;bersicht</a></li>
+             </ul>
+            </div>
+    </div>
+      <div class="colitem">
+          <div id="zusatznavi">
+              <h2 class="hidden">Oft genutzte Seiten</h2>
+              <ul>
+
+
+                <li><a href='?aktion=' >Startseite</a></li>
+                <li><a href='?aktion=impressum' >Impressum</a></li>
+                <li><a href='?aktion=hinweise' >Rechtliche Hinweise</a></li>
+                <li><a href='?aktion=kontakt'>Kontakt</a></li>
+                          </ul>
+<p>ServiceCenter<br>0211 837 1917<br><a href="mailto:redaktion@justiz.de">redaktion@justiz.de</a></p>
+
+            <ul>
+
+        <li><a href='/en/index.php?aktion=suche'>
+                <img id=flag_en src=images/flag_en.gif alt=Flagge_en border=0 height=10 width=15> Englische Seite</a></li>
+                      </ul>
+          </div>
+      </div>
+      <div class="colitem">
+        <div class="title_row">
+          <div class="title_left"></div>
+        </div>
+        <div class="content_row">
+          <div class="content_cell" id="Suche-1">
+    <form action="http://www.justiz.de/suchergebnis/index.php" method="get">
+            <label for="query" class="small">
+        Suche     </label><br>
+                <input id="suchzeile" name="q" type="text">
+                <input alt="Suche starten" src="images/lupe.gif" type="image" title="Suche starten">
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="spalteRechts">
+      <div class="colitem">
+        <div class="title_row">
+          <div class="title_left"></div>
+        </div>
+        <div class="content_row">
+          <div class="content_cell" id="Marginalien-1">
+            <div class="infobox">
+              <h3>Weitere Infos</h3>
+              <ul>
+     <li class="publication"><a target=_blank  href="http://www.justiz.de">Justizportal des Bundes<br>und der L&auml;nder</a></li>
+                <li class="publication"><a target=_blank  href="http://www.handelsregister.de">Gemeinsames<br>Registerportal der L&auml;nder</a></li>
+                <li class="publication"><a target=_blank  href="http://www.justiz.de/OrtsGerichtsverzeichnis/index.php">Orts- und<br>Gerichtsverzeichnis</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="spalteMitte"><a name="top"></a>
+      <div id="inhalt">
+        <h2 class="hidden">Inhalt</h2>  <a name="hauptueberschrift"></a>
+          <!--div class="bodyAttrib"-->
+                  <p><h3>Bekanntmachungen suchen</h3>
+<!--table  border=1 width=658 bgcolor=white><tr><td align=center>
+<h2>Registerbekanntmachungen suchen</h2-->
+<noscript>
+<H4>Bitte aktivieren Sie Javascript in Ihrem Browser,
+da ansonsten nur eine eingeschränkte Suchfunktionalität gegeben ist.</h4>
+</noscript>
+<!--/td></tr></table-->
+
+
+<br>
+<table  border=0 width=658 bgcolor=white><tr> <TD style="BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid"
+             align=center ><FONT face=Arial size=4>
+  <nobr>Es wurden 45079 Treffer gefunden.</nobr><br>
+        <nobr><A href="#Ergebnis">Dokument 1 - 10 von 45079 &Uuml;bereinstimmungen anzeigen</a></nobr><br><nobr><a href="javascript:window.print()">Suchergebnisse drucken</a></nobr></center></td></tr></table>
+          </center>
+       <BR>
+      <FORM name=suche onsubmit="return validate_form()" action="?aktion=suche#Ergebnis" method=post target=_self>
+      <TABLE width=658 border=0 bgcolor=white>
+        <TR>
+         <TD style="BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid"
+             align=middle width=260><FONT face=Arial size=4>
+                       <INPUT type=radio name=suchart value=detail >&nbsp;Detail-Suche</FONT>
+          </TD>
+          <TD width=138>&nbsp;</TD>
+          <TD style="BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid"
+              align=middle width=260><FONT face=Arial size=4>
+                           <INPUT type=radio name=suchart value=uneingeschr CHECKED >&nbsp;Uneingeschr&auml;nkte Suche</FONT>
+          </TD>
+         </TR>
+        <TR>
+          <TD borderColor=#ffffff align=middle width=658 colSpan=3>
+            <center><br><br><INPUT type=submit value="Suche starten" name="button">&nbsp;</center>
+
+       </TR>
+      </TABLE>
+      <BR>
+      <TABLE width=658 border=0>
+
+        <TR>
+          <TD width=157>Bundesl&auml;nder:</TD>
+          <TD><SELECT style="WIDTH: 300px"
+            onchange=javascript:updateGericht(this.value) name=land>
+              <OPTION value="" selected>-- Alle Bundesl&auml;nder --</OPTION><OPTION value=bw>Baden-Wuerttemberg</OPTION>
+<OPTION value=by>Bayern</OPTION>
+<OPTION value=be>Berlin</OPTION>
+<OPTION value=br>Brandenburg</OPTION>
+<OPTION value=hb>Bremen</OPTION>
+<OPTION value=hh>Hamburg</OPTION>
+<OPTION value=he>Hessen</OPTION>
+<OPTION value=mv>Mecklenburg-Vorpommern</OPTION>
+<OPTION value=ni>Niedersachsen</OPTION>
+<OPTION value=nw>Nordrhein-Westfalen</OPTION>
+<OPTION value=rp>Rheinland-Pfalz</OPTION>
+<OPTION value=sl>Saarland</OPTION>
+<OPTION value=sn>Sachsen</OPTION>
+<OPTION value=st>Sachsen-Anhalt</OPTION>
+<OPTION value=sh>Schleswig-Holstein</OPTION>
+<OPTION value=th>Thüringen</OPTION>
+</SELECT>
+        </TD></TR>
+        <TR>
+          <TD width=157>Gericht:</TD>
+          <TD><SELECT style="WIDTH: 300px" name=gericht> <OPTION
+              value="" selected>-- Alle Registergerichte --</OPTION></SELECT> </TD></TR>
+<input type=hidden name=gericht_name value="">
+<input type=hidden name=seite>
+<input type=hidden name=l>
+<input type=hidden name=r>
+<input type=hidden name=all value=false >
+
+        <TR>
+          <TD colSpan=2>&nbsp;</TD></TR>
+        <TR>
+          <TD width=157>Datum der Bekanntmachung</TD>
+          <TD><table><tr>
+    <td>von:&nbsp;
+    <SELECT name=vt size=1>
+                     <OPTION value="" selected>--</OPTION><OPTION value=1>1</OPTION><OPTION value=2>2</OPTION><OPTION value=3>3</OPTION><OPTION value=4>4</OPTION><OPTION value=5>5</OPTION><OPTION value=6>6</OPTION><OPTION value=7>7</OPTION><OPTION value=8>8</OPTION><OPTION value=9>9</OPTION><OPTION value=10>10</OPTION><OPTION value=11>11</OPTION><OPTION value=12>12</OPTION><OPTION value=13>13</OPTION><OPTION value=14>14</OPTION><OPTION value=15>15</OPTION><OPTION value=16>16</OPTION><OPTION value=17>17</OPTION><OPTION value=18>18</OPTION><OPTION value=19>19</OPTION><OPTION value=20>20</OPTION><OPTION value=21>21</OPTION><OPTION value=22>22</OPTION><OPTION value=23>23</OPTION><OPTION value=24>24</OPTION><OPTION value=25>25</OPTION><OPTION value=26>26</OPTION><OPTION value=27>27</OPTION><OPTION value=28>28</OPTION><OPTION value=29>29</OPTION><OPTION value=30>30</OPTION><OPTION value=31>31</OPTION>    </select>&nbsp;-&nbsp;
+    <SELECT name=vm  size=1>
+                     <OPTION value="" selected>--</OPTION><OPTION value=1>1</OPTION><OPTION value=2>2</OPTION><OPTION value=3>3</OPTION><OPTION value=4>4</OPTION><OPTION value=5>5</OPTION><OPTION value=6>6</OPTION><OPTION value=7>7</OPTION><OPTION value=8>8</OPTION><OPTION value=9>9</OPTION><OPTION value=10>10</OPTION><OPTION value=11>11</OPTION><OPTION value=12>12</OPTION>                </select>&nbsp;-&nbsp;
+    <SELECT name=vj  size=1>
+                     <OPTION value="" selected>----</OPTION><OPTION value=2000>2000</OPTION><OPTION value=2001>2001</OPTION><OPTION value=2002>2002</OPTION><OPTION value=2003>2003</OPTION><OPTION value=2004>2004</OPTION><OPTION value=2005>2005</OPTION><OPTION value=2006>2006</OPTION><OPTION value=2007>2007</OPTION><OPTION value=2008>2008</OPTION><OPTION value=2009>2009</OPTION><OPTION value=2010>2010</OPTION><OPTION value=2011>2011</OPTION><OPTION value=2012>2012</OPTION><OPTION value=2013>2013</OPTION><OPTION value=2014>2014</OPTION><OPTION value=2015>2015</OPTION>                </select></td><td>&nbsp;&nbsp;&nbsp;bis:&nbsp;
+    <SELECT name=bt  size=1>
+                     <OPTION value="" selected>--</OPTION><OPTION value=1>1</OPTION><OPTION value=2>2</OPTION><OPTION value=3>3</OPTION><OPTION value=4>4</OPTION><OPTION value=5>5</OPTION><OPTION value=6>6</OPTION><OPTION value=7>7</OPTION><OPTION value=8>8</OPTION><OPTION value=9>9</OPTION><OPTION value=10>10</OPTION><OPTION value=11>11</OPTION><OPTION value=12>12</OPTION><OPTION value=13>13</OPTION><OPTION value=14>14</OPTION><OPTION value=15>15</OPTION><OPTION value=16>16</OPTION><OPTION value=17>17</OPTION><OPTION value=18>18</OPTION><OPTION value=19>19</OPTION><OPTION value=20>20</OPTION><OPTION value=21>21</OPTION><OPTION value=22>22</OPTION><OPTION value=23>23</OPTION><OPTION value=24>24</OPTION><OPTION value=25>25</OPTION><OPTION value=26>26</OPTION><OPTION value=27>27</OPTION><OPTION value=28>28</OPTION><OPTION value=29>29</OPTION><OPTION value=30>30</OPTION><OPTION value=31>31</OPTION>                </select>&nbsp;-&nbsp;<SELECT name=bm  size=1>
+                     <OPTION value="" selected>--</OPTION><OPTION value=1>1</OPTION><OPTION value=2>2</OPTION><OPTION value=3>3</OPTION><OPTION value=4>4</OPTION><OPTION value=5>5</OPTION><OPTION value=6>6</OPTION><OPTION value=7>7</OPTION><OPTION value=8>8</OPTION><OPTION value=9>9</OPTION><OPTION value=10>10</OPTION><OPTION value=11>11</OPTION><OPTION value=12>12</OPTION>                </select>&nbsp;-&nbsp;
+    <SELECT name=bj  size=1>
+                     <OPTION value="" selected>----</OPTION><OPTION value=2000>2000</OPTION><OPTION value=2001>2001</OPTION><OPTION value=2002>2002</OPTION><OPTION value=2003>2003</OPTION><OPTION value=2004>2004</OPTION><OPTION value=2005>2005</OPTION><OPTION value=2006>2006</OPTION><OPTION value=2007>2007</OPTION><OPTION value=2008>2008</OPTION><OPTION value=2009>2009</OPTION><OPTION value=2010>2010</OPTION><OPTION value=2011>2011</OPTION><OPTION value=2012>2012</OPTION><OPTION value=2013>2013</OPTION><OPTION value=2014>2014</OPTION><OPTION value=2015>2015</OPTION>                 </select></td>
+           </tr></table> </TD></TR>
+        <TR>
+          <TD width=157><SPAN class=form>Firma/Name</SPAN></TD>
+          <TD><INPUT size=43 name=fname></TD></TR>
+        <TR>
+          <TD width=157><SPAN class=form>Sitz/Niederlassung</SPAN></TD>
+          <TD><INPUT size=43 name=fsitz></TD></TR>
+        <TR>
+          <TD width=157>Aktenzeichen des Registergerichts</TD>
+<td>  <SELECT size=1 name=rubrik>
+                <OPTION value="" selected>-</OPTION>
+<OPTION value=A>HRA</OPTION>
+<OPTION value=B>HRB</OPTION>
+<OPTION value=G>GnR</OPTION>
+<OPTION value=V>VR</OPTION>
+<OPTION value=P>PR</OPTION>
+<OPTION value=AR>AR</OPTION>
+</select>&nbsp;<INPUT size=10 maxlength=10 name=az>&nbsp;
+</TD></TR>
+        <TR>
+          <TD width=157>Gegenstand der
+          Bekanntmachung</TD>
+          <TD><SELECT size=1 name=gegenstand> <OPTION
+              value="0"
+              selected>-- Alle Bekanntmachungen --</OPTION><OPTION value=1>Neueintragungen</OPTION>
+<OPTION value=2>Veränderungen</OPTION>
+<OPTION value=3>Löschungen von Amts wegen</OPTION>
+<OPTION value=4>Löschungsankündigungen</OPTION>
+<OPTION value=5>Löschungen</OPTION>
+<OPTION value=6>Berichtigungen</OPTION>
+<OPTION value=7>Vorgänge ohne Eintragung</OPTION>
+              </SELECT> </TD></TR>
+  <TR>
+          <TD width=157>Anzahl Treffer pro Seite</TD>
+          <TD><SELECT name=anzv>
+              <OPTION value=10 selected>10</OPTION>
+              <OPTION value=20>20</OPTION>
+              <OPTION value=30>30</OPTION>
+              <OPTION value=40>40</OPTION>
+        <OPTION value=50>50</OPTION>
+              <OPTION value=alle>alle</OPTION>
+
+</select>&nbsp;&nbsp;
+    Sortiert nach &nbsp;
+    <SELECT size=1 name=order> <OPTION value=1 selected>Aktenzeichen</OPTION>
+             <OPTION value=2 >Firma/Name</OPTION>
+          <OPTION value=3>Datum der Eintragung/Anordnung</OPTION>
+          <OPTION value=4>Datum der Bekanntmachung</OPTION>
+
+  </TD>
+       <TR>
+          <TD colSpan=2>&nbsp;</TD></TR>
+        <TR>
+</table></form>
+
+<br>
+<table  border=0 width=658 bgcolor=white><tr><td >
+<B>
+Die auf dieser Seite veröffentlichten Bekanntmachungen der Registergerichte erfolgen gemäß &sect; 10 des Handelsgesetzbuches bzw. &sect;&sect; 156 GenG, 5 Abs. 2 PartGG und den sich darauf beziehenden weiteren Vorschriften sowie die Bekanntmachungen gem&auml;&szlig; &sect; 66 BGB.
+<br>
+<br>
+Das angegebenen Datum "Bekannt gemacht am:" bezieht sich ausschließlich auf den Tag der erstmaligen Veröffentlichung auf diesen Internet-Seiten und enthält keine Aufschlüsse darüber wann die Bekanntmachungen in den von den Registergerichten bestimmten zusätzlichen Verkündungsblättern veröffentlicht worden sind.
+<br>
+<br><B>Bitte beachten Sie, dass bisher nur die Registerdaten der in der
+<A HREF="?aktion=laender">L&auml;nder&uuml;bersicht</A> aufgef&uuml;hrten
+Bundesl&auml;nder im Internet eingestellt sind!</B><br>
+<br>
+Eine uneingeschränkte Suche nach aktuellen Veröffentlichungen, "-Alle Registergerichte-" ist nur innerhalb von vier Wochen nach dem Tag der Bekanntmachung möglich. Nach Ablauf dieser Frist ist nur eine Detail-Suche über den gesamten Datenbestand möglich. Anzugeben sind dabei das Bundesland, das Registergericht und mindestens eine der folgenden Angaben:
+<br><br>
+Firma/Name oder Sitz/Niederlassung oder Aktenzeichen des Registergerichts
+<br>
+</b></td></tr></table>
+<br>
+<script>
+<!--
+//Die Werte der Suche in die Felder einfuegen!!
+
+document.suche.order.options[4-1].selected=true;
+document.suche.anzv.options[10/10-1].selected=true;
+//-->
+</script>
+<table>
+<tr><td colSpan=2><a name="#Ergebnis"><h3><nobr>Eingegebene Suchkriterien</nobr></h3></a></td></tr>
+<tr><TD colSpan=2><b>Uneingeschr&auml;nkte Suche:<br>
+Bundesland: -- Alle Bundesl&auml;nder --<br>
+Gericht: -- Alle Gerichte --<br>
+Datum der Bekanntmachung:  nur innerhalb der letzten vier Wochen<br>
+Firma/Name: <br>
+Sitz/Niederlassung: <br>
+Aktenzeichen:  <br>
+Sonderaktenzeichen: <br>
+Gegenstand der Bekanntmachung: <br>
+Sortiert nach: Datum der Bekanntmachung</b></table><br>
+
+<center><br>
+<table  border=0 width=658 bgcolor=white><tr> <TD align=center ><FONT face=Arial size=4><center>
+<nobr>Es wurden 45079 Treffer gefunden.</nobr><br>
+        <nobr>Dokument 1 - 10 von 45079 &Uuml;bereinstimmungen anzeigen</nobr><br>
+        <nobr><a href="javascript:window.print()">Suchergebnisse drucken</a></nobr></center></td></tr></table>
+                            </center><br><table border=0><tr><td><SELECT  size=1  onChange=blaettern(this.options[this.selectedIndex].value,-1,-1)><OPTION VALUE="1-1-21" SELECTED>1-20</option><OPTION VALUE="21-21-41" >21-40</option><OPTION VALUE="41-41-61" >41-60</option><OPTION VALUE="61-61-81" >61-80</option><OPTION VALUE="81-81-101" >81-100</option><OPTION VALUE="101-101-121" >101-120</option><OPTION VALUE="121-121-141" >121-140</option><OPTION VALUE="141-141-161" >141-160</option><OPTION VALUE="161-161-181" >161-180</option><OPTION VALUE="181-181-201" >181-200</option><OPTION VALUE="201-201-221" >201-220</option><OPTION VALUE="221-221-241" >221-240</option><OPTION VALUE="241-241-261" >241-260</option><OPTION VALUE="261-261-281" >261-280</option><OPTION VALUE="281-281-301" >281-300</option><OPTION VALUE="301-301-321" >301-320</option><OPTION VALUE="321-321-341" >321-340</option><OPTION VALUE="341-341-361" >341-360</option><OPTION VALUE="361-361-381" >361-380</option><OPTION VALUE="381-381-401" >381-400</option><OPTION VALUE="401-401-421" >401-420</option><OPTION VALUE="421-421-441" >421-440</option><OPTION VALUE="441-441-461" >441-460</option><OPTION VALUE="461-461-481" >461-480</option><OPTION VALUE="481-481-501" >481-500</option><OPTION VALUE="501-501-521" >501-520</option><OPTION VALUE="521-521-541" >521-540</option><OPTION VALUE="541-541-561" >541-560</option><OPTION VALUE="561-561-581" >561-580</option><OPTION VALUE="581-581-601" >581-600</option><OPTION VALUE="601-601-621" >601-620</option><OPTION VALUE="621-621-641" >621-640</option><OPTION VALUE="641-641-661" >641-660</option><OPTION VALUE="661-661-681" >661-680</option><OPTION VALUE="681-681-701" >681-700</option><OPTION VALUE="701-701-721" >701-720</option><OPTION VALUE="721-721-741" >721-740</option><OPTION VALUE="741-741-761" >741-760</option><OPTION VALUE="761-761-781" >761-780</option><OPTION VALUE="781-781-801" >781-800</option><OPTION VALUE="801-801-821" >801-820</option><OPTION VALUE="821-821-841" >821-840</option><OPTION VALUE="841-841-861" >841-860</option><OPTION VALUE="861-861-881" >861-880</option><OPTION VALUE="881-881-901" >881-900</option><OPTION VALUE="901-901-921" >901-920</option><OPTION VALUE="921-921-941" >921-940</option><OPTION VALUE="941-941-961" >941-960</option><OPTION VALUE="961-961-981" >961-980</option><OPTION VALUE="981-981-1001" >981-1000</option><OPTION VALUE="1001-1001-1021" >1001-1020</option><OPTION VALUE="1021-1021-1041" >1021-1040</option><OPTION VALUE="1041-1041-1061" >1041-1060</option><OPTION VALUE="1061-1061-1081" >1061-1080</option><OPTION VALUE="1081-1081-1101" >1081-1100</option><OPTION VALUE="1101-1101-1121" >1101-1120</option><OPTION VALUE="1121-1121-1141" >1121-1140</option><OPTION VALUE="1141-1141-1161" >1141-1160</option><OPTION VALUE="1161-1161-1181" >1161-1180</option><OPTION VALUE="1181-1181-1201" >1181-1200</option><OPTION VALUE="1201-1201-1221" >1201-1220</option><OPTION VALUE="1221-1221-1241" >1221-1240</option><OPTION VALUE="1241-1241-1261" >1241-1260</option><OPTION VALUE="1261-1261-1281" >1261-1280</option><OPTION VALUE="1281-1281-1301" >1281-1300</option><OPTION VALUE="1301-1301-1321" >1301-1320</option><OPTION VALUE="1321-1321-1341" >1321-1340</option><OPTION VALUE="1341-1341-1361" >1341-1360</option><OPTION VALUE="1361-1361-1381" >1361-1380</option><OPTION VALUE="1381-1381-1401" >1381-1400</option><OPTION VALUE="1401-1401-1421" >1401-1420</option><OPTION VALUE="1421-1421-1441" >1421-1440</option><OPTION VALUE="1441-1441-1461" >1441-1460</option><OPTION VALUE="1461-1461-1481" >1461-1480</option><OPTION VALUE="1481-1481-1501" >1481-1500</option><OPTION VALUE="1501-1501-1521" >1501-1520</option><OPTION VALUE="1521-1521-1541" >1521-1540</option><OPTION VALUE="1541-1541-1561" >1541-1560</option><OPTION VALUE="1561-1561-1581" >1561-1580</option><OPTION VALUE="1581-1581-1601" >1581-1600</option><OPTION VALUE="1601-1601-1621" >1601-1620</option><OPTION VALUE="1621-1621-1641" >1621-1640</option><OPTION VALUE="1641-1641-1661" >1641-1660</option><OPTION VALUE="1661-1661-1681" >1661-1680</option><OPTION VALUE="1681-1681-1701" >1681-1700</option><OPTION VALUE="1701-1701-1721" >1701-1720</option><OPTION VALUE="1721-1721-1741" >1721-1740</option><OPTION VALUE="1741-1741-1761" >1741-1760</option><OPTION VALUE="1761-1761-1781" >1761-1780</option><OPTION VALUE="1781-1781-1801" >1781-1800</option><OPTION VALUE="1801-1801-1821" >1801-1820</option><OPTION VALUE="1821-1821-1841" >1821-1840</option><OPTION VALUE="1841-1841-1861" >1841-1860</option><OPTION VALUE="1861-1861-1881" >1861-1880</option><OPTION VALUE="1881-1881-1901" >1881-1900</option><OPTION VALUE="1901-1901-1921" >1901-1920</option><OPTION VALUE="1921-1921-1941" >1921-1940</option><OPTION VALUE="1941-1941-1961" >1941-1960</option><OPTION VALUE="1961-1961-1981" >1961-1980</option><OPTION VALUE="1981-1981-2001" >1981-2000</option><OPTION VALUE="2001-2001-2021" >2001-2020</option><OPTION VALUE="2021-2021-2041" >2021-2040</option><OPTION VALUE="2041-2041-2061" >2041-2060</option><OPTION VALUE="2061-2061-2081" >2061-2080</option><OPTION VALUE="2081-2081-2101" >2081-2100</option><OPTION VALUE="2101-2101-2121" >2101-2120</option><OPTION VALUE="2121-2121-2141" >2121-2140</option><OPTION VALUE="2141-2141-2161" >2141-2160</option><OPTION VALUE="2161-2161-2181" >2161-2180</option><OPTION VALUE="2181-2181-2201" >2181-2200</option><OPTION VALUE="2201-2201-2221" >2201-2220</option><OPTION VALUE="2221-2221-2241" >2221-2240</option><OPTION VALUE="2241-2241-2261" >2241-2260</option><OPTION VALUE="2261-2261-2281" >2261-2280</option><OPTION VALUE="2281-2281-2301" >2281-2300</option><OPTION VALUE="2301-2301-2321" >2301-2320</option><OPTION VALUE="2321-2321-2341" >2321-2340</option><OPTION VALUE="2341-2341-2361" >2341-2360</option><OPTION VALUE="2361-2361-2381" >2361-2380</option><OPTION VALUE="2381-2381-2401" >2381-2400</option><OPTION VALUE="2401-2401-2421" >2401-2420</option><OPTION VALUE="2421-2421-2441" >2421-2440</option><OPTION VALUE="2441-2441-2461" >2441-2460</option><OPTION VALUE="2461-2461-2481" >2461-2480</option><OPTION VALUE="2481-2481-2501" >2481-2500</option><OPTION VALUE="2501-2501-2521" >2501-2520</option><OPTION VALUE="2521-2521-2541" >2521-2540</option><OPTION VALUE="2541-2541-2561" >2541-2560</option><OPTION VALUE="2561-2561-2581" >2561-2580</option><OPTION VALUE="2581-2581-2601" >2581-2600</option><OPTION VALUE="2601-2601-2621" >2601-2620</option><OPTION VALUE="2621-2621-2641" >2621-2640</option><OPTION VALUE="2641-2641-2661" >2641-2660</option><OPTION VALUE="2661-2661-2681" >2661-2680</option><OPTION VALUE="2681-2681-2701" >2681-2700</option><OPTION VALUE="2701-2701-2721" >2701-2720</option><OPTION VALUE="2721-2721-2741" >2721-2740</option><OPTION VALUE="2741-2741-2761" >2741-2760</option><OPTION VALUE="2761-2761-2781" >2761-2780</option><OPTION VALUE="2781-2781-2801" >2781-2800</option><OPTION VALUE="2801-2801-2821" >2801-2820</option><OPTION VALUE="2821-2821-2841" >2821-2840</option><OPTION VALUE="2841-2841-2861" >2841-2860</option><OPTION VALUE="2861-2861-2881" >2861-2880</option><OPTION VALUE="2881-2881-2901" >2881-2900</option><OPTION VALUE="2901-2901-2921" >2901-2920</option><OPTION VALUE="2921-2921-2941" >2921-2940</option><OPTION VALUE="2941-2941-2961" >2941-2960</option><OPTION VALUE="2961-2961-2981" >2961-2980</option><OPTION VALUE="2981-2981-3001" >2981-3000</option><OPTION VALUE="3001-3001-3021" >3001-3020</option><OPTION VALUE="3021-3021-3041" >3021-3040</option><OPTION VALUE="3041-3041-3061" >3041-3060</option><OPTION VALUE="3061-3061-3081" >3061-3080</option><OPTION VALUE="3081-3081-3101" >3081-3100</option><OPTION VALUE="3101-3101-3121" >3101-3120</option><OPTION VALUE="3121-3121-3141" >3121-3140</option><OPTION VALUE="3141-3141-3161" >3141-3160</option><OPTION VALUE="3161-3161-3181" >3161-3180</option><OPTION VALUE="3181-3181-3201" >3181-3200</option><OPTION VALUE="3201-3201-3221" >3201-3220</option><OPTION VALUE="3221-3221-3241" >3221-3240</option><OPTION VALUE="3241-3241-3261" >3241-3260</option><OPTION VALUE="3261-3261-3281" >3261-3280</option><OPTION VALUE="3281-3281-3301" >3281-3300</option><OPTION VALUE="3301-3301-3321" >3301-3320</option><OPTION VALUE="3321-3321-3341" >3321-3340</option><OPTION VALUE="3341-3341-3361" >3341-3360</option><OPTION VALUE="3361-3361-3381" >3361-3380</option><OPTION VALUE="3381-3381-3401" >3381-3400</option><OPTION VALUE="3401-3401-3421" >3401-3420</option><OPTION VALUE="3421-3421-3441" >3421-3440</option><OPTION VALUE="3441-3441-3461" >3441-3460</option><OPTION VALUE="3461-3461-3481" >3461-3480</option><OPTION VALUE="3481-3481-3501" >3481-3500</option><OPTION VALUE="3501-3501-3521" >3501-3520</option><OPTION VALUE="3521-3521-3541" >3521-3540</option><OPTION VALUE="3541-3541-3561" >3541-3560</option><OPTION VALUE="3561-3561-3581" >3561-3580</option><OPTION VALUE="3581-3581-3601" >3581-3600</option><OPTION VALUE="3601-3601-3621" >3601-3620</option><OPTION VALUE="3621-3621-3641" >3621-3640</option><OPTION VALUE="3641-3641-3661" >3641-3660</option><OPTION VALUE="3661-3661-3681" >3661-3680</option><OPTION VALUE="3681-3681-3701" >3681-3700</option><OPTION VALUE="3701-3701-3721" >3701-3720</option><OPTION VALUE="3721-3721-3741" >3721-3740</option><OPTION VALUE="3741-3741-3761" >3741-3760</option><OPTION VALUE="3761-3761-3781" >3761-3780</option><OPTION VALUE="3781-3781-3801" >3781-3800</option><OPTION VALUE="3801-3801-3821" >3801-3820</option><OPTION VALUE="3821-3821-3841" >3821-3840</option><OPTION VALUE="3841-3841-3861" >3841-3860</option><OPTION VALUE="3861-3861-3881" >3861-3880</option><OPTION VALUE="3881-3881-3901" >3881-3900</option><OPTION VALUE="3901-3901-3921" >3901-3920</option><OPTION VALUE="3921-3921-3941" >3921-3940</option><OPTION VALUE="3941-3941-3961" >3941-3960</option><OPTION VALUE="3961-3961-3981" >3961-3980</option><OPTION VALUE="3981-3981-4001" >3981-4000</option><OPTION VALUE="4001-4001-4021" >4001-4020</option><OPTION VALUE="4021-4021-4041" >4021-4040</option><OPTION VALUE="4041-4041-4061" >4041-4060</option><OPTION VALUE="4061-4061-4081" >4061-4080</option><OPTION VALUE="4081-4081-4101" >4081-4100</option><OPTION VALUE="4101-4101-4121" >4101-4120</option><OPTION VALUE="4121-4121-4141" >4121-4140</option><OPTION VALUE="4141-4141-4161" >4141-4160</option><OPTION VALUE="4161-4161-4181" >4161-4180</option><OPTION VALUE="4181-4181-4201" >4181-4200</option><OPTION VALUE="4201-4201-4221" >4201-4220</option><OPTION VALUE="4221-4221-4241" >4221-4240</option><OPTION VALUE="4241-4241-4261" >4241-4260</option><OPTION VALUE="4261-4261-4281" >4261-4280</option><OPTION VALUE="4281-4281-4301" >4281-4300</option><OPTION VALUE="4301-4301-4321" >4301-4320</option><OPTION VALUE="4321-4321-4341" >4321-4340</option><OPTION VALUE="4341-4341-4361" >4341-4360</option><OPTION VALUE="4361-4361-4381" >4361-4380</option><OPTION VALUE="4381-4381-4401" >4381-4400</option><OPTION VALUE="4401-4401-4421" >4401-4420</option><OPTION VALUE="4421-4421-4441" >4421-4440</option><OPTION VALUE="4441-4441-4461" >4441-4460</option><OPTION VALUE="4461-4461-4481" >4461-4480</option><OPTION VALUE="4481-4481-4501" >4481-4500</option><OPTION VALUE="4501-4501-4521" >4501-4508</option><OPTION VALUE="all" >alle</option></SELECT></td><td><button style="font-weight:bold;"
+      onClick=blaettern('1','1','21')>&nbsp;&nbsp;1&nbsp;&nbsp;</button><button onClick=blaettern('2','1','21')>&nbsp;&nbsp;2&nbsp;&nbsp;</button><button onClick=blaettern('3','1','21')>&nbsp;&nbsp;3&nbsp;&nbsp;</button><button onClick=blaettern('4','1','21')>&nbsp;&nbsp;4&nbsp;&nbsp;</button><button onClick=blaettern('5','1','21')>&nbsp;&nbsp;5&nbsp;&nbsp;</button><button onClick=blaettern('6','1','21')>&nbsp;&nbsp;6&nbsp;&nbsp;</button><button onClick=blaettern('7','1','21')>&nbsp;&nbsp;7&nbsp;&nbsp;</button><button onClick=blaettern('8','1','21')>&nbsp;&nbsp;8&nbsp;&nbsp;</button><button onClick=blaettern('9','1','21')>&nbsp;&nbsp;9&nbsp;&nbsp;</button><button onClick=blaettern('10','1','21')>&nbsp;10&nbsp;</button><button onClick=blaettern('11','1','21')>&nbsp;11&nbsp;</button><button onClick=blaettern('12','1','21')>&nbsp;12&nbsp;</button><button onClick=blaettern('13','1','21')>&nbsp;13&nbsp;</button><button onClick=blaettern('14','1','21')>&nbsp;14&nbsp;</button><button onClick=blaettern('15','1','21')>&nbsp;15&nbsp;</button><button onClick=blaettern('16','1','21')>&nbsp;16&nbsp;</button><button onClick=blaettern('17','1','21')>&nbsp;17&nbsp;</button><button onClick=blaettern('18','1','21')>&nbsp;18&nbsp;</button><button onClick=blaettern('19','1','21')>&nbsp;19&nbsp;</button><button onClick=blaettern('20','1','21')>&nbsp;20&nbsp;</button><button onClick=blaettern('21','21','41')>&nbsp;>>&nbsp;</button></td></tr></table><br><br><h2><b>Baden-Wuerttemberg</h2><br>
+<LI><a href="javascript:NeuFenster('rb_id=474072&land_abk=bw')" >12.02.2015<ul>Zeuterner Food Engineering GmbH, Ubstadt-Weiher, HRB 232208 <br>Bekannt gemacht am: 12.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474073&land_abk=bw')" >13.02.2015<ul>Unimec Deutschland GmbH, Kehl, HRB 712638 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474074&land_abk=bw')" >13.02.2015<ul>Cuesoft GmbH, B&#246;tzingen, HRB 708821 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474075&land_abk=bw')" >13.02.2015<ul>HEEB-INOTEC Gesellschaft mit beschr&#228;nkter Haftung, Sersheim, HRB 290617 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474076&land_abk=bw')" >13.02.2015<ul>Barthelme&#223; Beteiligung GmbH, Rutesheim, HRB 751790 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474077&land_abk=bw')" >13.02.2015<ul>IWSP Germany Investment Komplement&#228;r GmbH, Reutlingen, HRB 739018 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474078&land_abk=bw')" >13.02.2015<ul>Green Power Werneuchen UG (haftungsbeschr&#228;nkt) & Co. KG, &#214;tisheim, HRA 705549 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474079&land_abk=bw')" >13.02.2015<ul>Sectus Sicherheitsl&#246;sungen GmbH, Holzgerlingen, HRB 743060 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474080&land_abk=bw')" >13.02.2015<ul>RBX Energie Effizienz Systeme GmbH, Stuttgart, HRB 742819 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<LI><a href="javascript:NeuFenster('rb_id=474081&land_abk=bw')" >13.02.2015<ul>SomiTel GmbH, Ettlingen, HRB 361660 <br>Bekannt gemacht am: 13.02.2015</ul><p></a></LI>
+<table border=0><tr><td><SELECT  size=1  onChange=blaettern(this.options[this.selectedIndex].value,-1,-1)><OPTION VALUE="1-1-21" SELECTED>1-20</option><OPTION VALUE="21-21-41" >21-40</option><OPTION VALUE="41-41-61" >41-60</option><OPTION VALUE="61-61-81" >61-80</option><OPTION VALUE="81-81-101" >81-100</option><OPTION VALUE="101-101-121" >101-120</option><OPTION VALUE="121-121-141" >121-140</option><OPTION VALUE="141-141-161" >141-160</option><OPTION VALUE="161-161-181" >161-180</option><OPTION VALUE="181-181-201" >181-200</option><OPTION VALUE="201-201-221" >201-220</option><OPTION VALUE="221-221-241" >221-240</option><OPTION VALUE="241-241-261" >241-260</option><OPTION VALUE="261-261-281" >261-280</option><OPTION VALUE="281-281-301" >281-300</option><OPTION VALUE="301-301-321" >301-320</option><OPTION VALUE="321-321-341" >321-340</option><OPTION VALUE="341-341-361" >341-360</option><OPTION VALUE="361-361-381" >361-380</option><OPTION VALUE="381-381-401" >381-400</option><OPTION VALUE="401-401-421" >401-420</option><OPTION VALUE="421-421-441" >421-440</option><OPTION VALUE="441-441-461" >441-460</option><OPTION VALUE="461-461-481" >461-480</option><OPTION VALUE="481-481-501" >481-500</option><OPTION VALUE="501-501-521" >501-520</option><OPTION VALUE="521-521-541" >521-540</option><OPTION VALUE="541-541-561" >541-560</option><OPTION VALUE="561-561-581" >561-580</option><OPTION VALUE="581-581-601" >581-600</option><OPTION VALUE="601-601-621" >601-620</option><OPTION VALUE="621-621-641" >621-640</option><OPTION VALUE="641-641-661" >641-660</option><OPTION VALUE="661-661-681" >661-680</option><OPTION VALUE="681-681-701" >681-700</option><OPTION VALUE="701-701-721" >701-720</option><OPTION VALUE="721-721-741" >721-740</option><OPTION VALUE="741-741-761" >741-760</option><OPTION VALUE="761-761-781" >761-780</option><OPTION VALUE="781-781-801" >781-800</option><OPTION VALUE="801-801-821" >801-820</option><OPTION VALUE="821-821-841" >821-840</option><OPTION VALUE="841-841-861" >841-860</option><OPTION VALUE="861-861-881" >861-880</option><OPTION VALUE="881-881-901" >881-900</option><OPTION VALUE="901-901-921" >901-920</option><OPTION VALUE="921-921-941" >921-940</option><OPTION VALUE="941-941-961" >941-960</option><OPTION VALUE="961-961-981" >961-980</option><OPTION VALUE="981-981-1001" >981-1000</option><OPTION VALUE="1001-1001-1021" >1001-1020</option><OPTION VALUE="1021-1021-1041" >1021-1040</option><OPTION VALUE="1041-1041-1061" >1041-1060</option><OPTION VALUE="1061-1061-1081" >1061-1080</option><OPTION VALUE="1081-1081-1101" >1081-1100</option><OPTION VALUE="1101-1101-1121" >1101-1120</option><OPTION VALUE="1121-1121-1141" >1121-1140</option><OPTION VALUE="1141-1141-1161" >1141-1160</option><OPTION VALUE="1161-1161-1181" >1161-1180</option><OPTION VALUE="1181-1181-1201" >1181-1200</option><OPTION VALUE="1201-1201-1221" >1201-1220</option><OPTION VALUE="1221-1221-1241" >1221-1240</option><OPTION VALUE="1241-1241-1261" >1241-1260</option><OPTION VALUE="1261-1261-1281" >1261-1280</option><OPTION VALUE="1281-1281-1301" >1281-1300</option><OPTION VALUE="1301-1301-1321" >1301-1320</option><OPTION VALUE="1321-1321-1341" >1321-1340</option><OPTION VALUE="1341-1341-1361" >1341-1360</option><OPTION VALUE="1361-1361-1381" >1361-1380</option><OPTION VALUE="1381-1381-1401" >1381-1400</option><OPTION VALUE="1401-1401-1421" >1401-1420</option><OPTION VALUE="1421-1421-1441" >1421-1440</option><OPTION VALUE="1441-1441-1461" >1441-1460</option><OPTION VALUE="1461-1461-1481" >1461-1480</option><OPTION VALUE="1481-1481-1501" >1481-1500</option><OPTION VALUE="1501-1501-1521" >1501-1520</option><OPTION VALUE="1521-1521-1541" >1521-1540</option><OPTION VALUE="1541-1541-1561" >1541-1560</option><OPTION VALUE="1561-1561-1581" >1561-1580</option><OPTION VALUE="1581-1581-1601" >1581-1600</option><OPTION VALUE="1601-1601-1621" >1601-1620</option><OPTION VALUE="1621-1621-1641" >1621-1640</option><OPTION VALUE="1641-1641-1661" >1641-1660</option><OPTION VALUE="1661-1661-1681" >1661-1680</option><OPTION VALUE="1681-1681-1701" >1681-1700</option><OPTION VALUE="1701-1701-1721" >1701-1720</option><OPTION VALUE="1721-1721-1741" >1721-1740</option><OPTION VALUE="1741-1741-1761" >1741-1760</option><OPTION VALUE="1761-1761-1781" >1761-1780</option><OPTION VALUE="1781-1781-1801" >1781-1800</option><OPTION VALUE="1801-1801-1821" >1801-1820</option><OPTION VALUE="1821-1821-1841" >1821-1840</option><OPTION VALUE="1841-1841-1861" >1841-1860</option><OPTION VALUE="1861-1861-1881" >1861-1880</option><OPTION VALUE="1881-1881-1901" >1881-1900</option><OPTION VALUE="1901-1901-1921" >1901-1920</option><OPTION VALUE="1921-1921-1941" >1921-1940</option><OPTION VALUE="1941-1941-1961" >1941-1960</option><OPTION VALUE="1961-1961-1981" >1961-1980</option><OPTION VALUE="1981-1981-2001" >1981-2000</option><OPTION VALUE="2001-2001-2021" >2001-2020</option><OPTION VALUE="2021-2021-2041" >2021-2040</option><OPTION VALUE="2041-2041-2061" >2041-2060</option><OPTION VALUE="2061-2061-2081" >2061-2080</option><OPTION VALUE="2081-2081-2101" >2081-2100</option><OPTION VALUE="2101-2101-2121" >2101-2120</option><OPTION VALUE="2121-2121-2141" >2121-2140</option><OPTION VALUE="2141-2141-2161" >2141-2160</option><OPTION VALUE="2161-2161-2181" >2161-2180</option><OPTION VALUE="2181-2181-2201" >2181-2200</option><OPTION VALUE="2201-2201-2221" >2201-2220</option><OPTION VALUE="2221-2221-2241" >2221-2240</option><OPTION VALUE="2241-2241-2261" >2241-2260</option><OPTION VALUE="2261-2261-2281" >2261-2280</option><OPTION VALUE="2281-2281-2301" >2281-2300</option><OPTION VALUE="2301-2301-2321" >2301-2320</option><OPTION VALUE="2321-2321-2341" >2321-2340</option><OPTION VALUE="2341-2341-2361" >2341-2360</option><OPTION VALUE="2361-2361-2381" >2361-2380</option><OPTION VALUE="2381-2381-2401" >2381-2400</option><OPTION VALUE="2401-2401-2421" >2401-2420</option><OPTION VALUE="2421-2421-2441" >2421-2440</option><OPTION VALUE="2441-2441-2461" >2441-2460</option><OPTION VALUE="2461-2461-2481" >2461-2480</option><OPTION VALUE="2481-2481-2501" >2481-2500</option><OPTION VALUE="2501-2501-2521" >2501-2520</option><OPTION VALUE="2521-2521-2541" >2521-2540</option><OPTION VALUE="2541-2541-2561" >2541-2560</option><OPTION VALUE="2561-2561-2581" >2561-2580</option><OPTION VALUE="2581-2581-2601" >2581-2600</option><OPTION VALUE="2601-2601-2621" >2601-2620</option><OPTION VALUE="2621-2621-2641" >2621-2640</option><OPTION VALUE="2641-2641-2661" >2641-2660</option><OPTION VALUE="2661-2661-2681" >2661-2680</option><OPTION VALUE="2681-2681-2701" >2681-2700</option><OPTION VALUE="2701-2701-2721" >2701-2720</option><OPTION VALUE="2721-2721-2741" >2721-2740</option><OPTION VALUE="2741-2741-2761" >2741-2760</option><OPTION VALUE="2761-2761-2781" >2761-2780</option><OPTION VALUE="2781-2781-2801" >2781-2800</option><OPTION VALUE="2801-2801-2821" >2801-2820</option><OPTION VALUE="2821-2821-2841" >2821-2840</option><OPTION VALUE="2841-2841-2861" >2841-2860</option><OPTION VALUE="2861-2861-2881" >2861-2880</option><OPTION VALUE="2881-2881-2901" >2881-2900</option><OPTION VALUE="2901-2901-2921" >2901-2920</option><OPTION VALUE="2921-2921-2941" >2921-2940</option><OPTION VALUE="2941-2941-2961" >2941-2960</option><OPTION VALUE="2961-2961-2981" >2961-2980</option><OPTION VALUE="2981-2981-3001" >2981-3000</option><OPTION VALUE="3001-3001-3021" >3001-3020</option><OPTION VALUE="3021-3021-3041" >3021-3040</option><OPTION VALUE="3041-3041-3061" >3041-3060</option><OPTION VALUE="3061-3061-3081" >3061-3080</option><OPTION VALUE="3081-3081-3101" >3081-3100</option><OPTION VALUE="3101-3101-3121" >3101-3120</option><OPTION VALUE="3121-3121-3141" >3121-3140</option><OPTION VALUE="3141-3141-3161" >3141-3160</option><OPTION VALUE="3161-3161-3181" >3161-3180</option><OPTION VALUE="3181-3181-3201" >3181-3200</option><OPTION VALUE="3201-3201-3221" >3201-3220</option><OPTION VALUE="3221-3221-3241" >3221-3240</option><OPTION VALUE="3241-3241-3261" >3241-3260</option><OPTION VALUE="3261-3261-3281" >3261-3280</option><OPTION VALUE="3281-3281-3301" >3281-3300</option><OPTION VALUE="3301-3301-3321" >3301-3320</option><OPTION VALUE="3321-3321-3341" >3321-3340</option><OPTION VALUE="3341-3341-3361" >3341-3360</option><OPTION VALUE="3361-3361-3381" >3361-3380</option><OPTION VALUE="3381-3381-3401" >3381-3400</option><OPTION VALUE="3401-3401-3421" >3401-3420</option><OPTION VALUE="3421-3421-3441" >3421-3440</option><OPTION VALUE="3441-3441-3461" >3441-3460</option><OPTION VALUE="3461-3461-3481" >3461-3480</option><OPTION VALUE="3481-3481-3501" >3481-3500</option><OPTION VALUE="3501-3501-3521" >3501-3520</option><OPTION VALUE="3521-3521-3541" >3521-3540</option><OPTION VALUE="3541-3541-3561" >3541-3560</option><OPTION VALUE="3561-3561-3581" >3561-3580</option><OPTION VALUE="3581-3581-3601" >3581-3600</option><OPTION VALUE="3601-3601-3621" >3601-3620</option><OPTION VALUE="3621-3621-3641" >3621-3640</option><OPTION VALUE="3641-3641-3661" >3641-3660</option><OPTION VALUE="3661-3661-3681" >3661-3680</option><OPTION VALUE="3681-3681-3701" >3681-3700</option><OPTION VALUE="3701-3701-3721" >3701-3720</option><OPTION VALUE="3721-3721-3741" >3721-3740</option><OPTION VALUE="3741-3741-3761" >3741-3760</option><OPTION VALUE="3761-3761-3781" >3761-3780</option><OPTION VALUE="3781-3781-3801" >3781-3800</option><OPTION VALUE="3801-3801-3821" >3801-3820</option><OPTION VALUE="3821-3821-3841" >3821-3840</option><OPTION VALUE="3841-3841-3861" >3841-3860</option><OPTION VALUE="3861-3861-3881" >3861-3880</option><OPTION VALUE="3881-3881-3901" >3881-3900</option><OPTION VALUE="3901-3901-3921" >3901-3920</option><OPTION VALUE="3921-3921-3941" >3921-3940</option><OPTION VALUE="3941-3941-3961" >3941-3960</option><OPTION VALUE="3961-3961-3981" >3961-3980</option><OPTION VALUE="3981-3981-4001" >3981-4000</option><OPTION VALUE="4001-4001-4021" >4001-4020</option><OPTION VALUE="4021-4021-4041" >4021-4040</option><OPTION VALUE="4041-4041-4061" >4041-4060</option><OPTION VALUE="4061-4061-4081" >4061-4080</option><OPTION VALUE="4081-4081-4101" >4081-4100</option><OPTION VALUE="4101-4101-4121" >4101-4120</option><OPTION VALUE="4121-4121-4141" >4121-4140</option><OPTION VALUE="4141-4141-4161" >4141-4160</option><OPTION VALUE="4161-4161-4181" >4161-4180</option><OPTION VALUE="4181-4181-4201" >4181-4200</option><OPTION VALUE="4201-4201-4221" >4201-4220</option><OPTION VALUE="4221-4221-4241" >4221-4240</option><OPTION VALUE="4241-4241-4261" >4241-4260</option><OPTION VALUE="4261-4261-4281" >4261-4280</option><OPTION VALUE="4281-4281-4301" >4281-4300</option><OPTION VALUE="4301-4301-4321" >4301-4320</option><OPTION VALUE="4321-4321-4341" >4321-4340</option><OPTION VALUE="4341-4341-4361" >4341-4360</option><OPTION VALUE="4361-4361-4381" >4361-4380</option><OPTION VALUE="4381-4381-4401" >4381-4400</option><OPTION VALUE="4401-4401-4421" >4401-4420</option><OPTION VALUE="4421-4421-4441" >4421-4440</option><OPTION VALUE="4441-4441-4461" >4441-4460</option><OPTION VALUE="4461-4461-4481" >4461-4480</option><OPTION VALUE="4481-4481-4501" >4481-4500</option><OPTION VALUE="4501-4501-4521" >4501-4508</option><OPTION VALUE="all" >alle</option></SELECT></td><td><button style="font-weight:bold;"
+      onClick=blaettern('1','1','21')>&nbsp;&nbsp;1&nbsp;&nbsp;</button><button onClick=blaettern('2','1','21')>&nbsp;&nbsp;2&nbsp;&nbsp;</button><button onClick=blaettern('3','1','21')>&nbsp;&nbsp;3&nbsp;&nbsp;</button><button onClick=blaettern('4','1','21')>&nbsp;&nbsp;4&nbsp;&nbsp;</button><button onClick=blaettern('5','1','21')>&nbsp;&nbsp;5&nbsp;&nbsp;</button><button onClick=blaettern('6','1','21')>&nbsp;&nbsp;6&nbsp;&nbsp;</button><button onClick=blaettern('7','1','21')>&nbsp;&nbsp;7&nbsp;&nbsp;</button><button onClick=blaettern('8','1','21')>&nbsp;&nbsp;8&nbsp;&nbsp;</button><button onClick=blaettern('9','1','21')>&nbsp;&nbsp;9&nbsp;&nbsp;</button><button onClick=blaettern('10','1','21')>&nbsp;10&nbsp;</button><button onClick=blaettern('11','1','21')>&nbsp;11&nbsp;</button><button onClick=blaettern('12','1','21')>&nbsp;12&nbsp;</button><button onClick=blaettern('13','1','21')>&nbsp;13&nbsp;</button><button onClick=blaettern('14','1','21')>&nbsp;14&nbsp;</button><button onClick=blaettern('15','1','21')>&nbsp;15&nbsp;</button><button onClick=blaettern('16','1','21')>&nbsp;16&nbsp;</button><button onClick=blaettern('17','1','21')>&nbsp;17&nbsp;</button><button onClick=blaettern('18','1','21')>&nbsp;18&nbsp;</button><button onClick=blaettern('19','1','21')>&nbsp;19&nbsp;</button><button onClick=blaettern('20','1','21')>&nbsp;20&nbsp;</button><button onClick=blaettern('21','21','41')>&nbsp;>>&nbsp;</button></td></tr></table></p>
+          <!--/div-->
+      </div>
+    </div>
+  </div>
+  <div id="fuss"> <!-- Start: Drucklink und Seitenanfang-Link -->
+  <p class="screen">
+    <a href="javascript:window.print()" alt="Seite drucken">Seite drucken</a>
+    &#160;|&#160;
+    <a href="#top" alt="zum Seitenanfang gehen">zum Anfang</a>
+  </p>
+  <!-- Ende: Drucklink und Seitenanfang-Link --> </div>
+</body></html>

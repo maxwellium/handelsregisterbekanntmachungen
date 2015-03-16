@@ -1,0 +1,22 @@
+{
+  "name": "handelsregisterbekanntmachungen",
+  "version": "1.0.0",
+  "description": "a module to crawl entries in the German commercial register (Handelsregisterbekanntmachungen). A very German module..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawler",
+    "handelsregisterbekanntmachungen",
+    "handelsregister"
+  ],
+  "author": "maxwellium",
+  "license": "MIT",
+  "dependencies": {
+    "ent": "^2.2.0",
+    "iconv-lite": "^0.4.7",
+    "q": "^1.2.0",
+    "request": "^2.53.0"
+  }
+}
