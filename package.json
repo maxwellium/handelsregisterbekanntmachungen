@@ -15,7 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "ent": "^2.2.0",
-    "iconv-lite": "^0.4.7",
     "q": "^1.2.0",
     "request": "^2.53.0"
   }
